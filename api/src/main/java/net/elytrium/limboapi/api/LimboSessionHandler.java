@@ -39,7 +39,7 @@ public interface LimboSessionHandler {
 
   }
 
-  default void onChat(String chat) {
+  default void onChat(Limbo server, LimboPlayer limboPlayer, String chat) {
 
   }
 

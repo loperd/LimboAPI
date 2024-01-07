@@ -247,7 +247,7 @@ public class LimboSessionHandlerImpl implements MinecraftSessionHandler {
     if (messageLength > Settings.IMP.MAIN.MAX_CHAT_MESSAGE_LENGTH) {
       this.kickTooBigPacket("chat", messageLength);
     } else {
-      this.callback.onChat(message);
+      this.callback.onChat(this.limbo, this.limboPlayer, message);
     }
 
     return true;
